@@ -30,7 +30,7 @@ public class RestAssuredTest extends TestReportConfig {
             Response response = given().contentType(ContentType.JSON)
                     .accept(ContentType.JSON).body(" {\n" +
                             "        \"firstName\": \"Diyaan\",\n" +
-                            "        \"lastName\": \"patel\",\n" +
+                            "        \"lastName\": \"Patel\",\n" +
                             "        \"age\": 1,\n" +
                             "        \"gender\": \"male\",\n" +
                             "        \"address\": \"chicago\"\n" +
