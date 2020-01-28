@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+        <theme>dark</theme>
+        <documentTitle>RestAssuredAutomationReport</documentTitle>
+    </configuration>
+</extentreports>
