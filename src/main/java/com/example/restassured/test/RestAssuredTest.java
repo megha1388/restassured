@@ -44,7 +44,7 @@ public class RestAssuredTest extends TestReportConfig {
         }
     }
     @Test
-    public void restApiCountPractiseTest() {
+    public void restApiCountLearningTest() {
         try {
             Response response = get("http://localhost:8080/person/people");
             Assert.assertEquals(response.getStatusCode(), 200);
