@@ -13,7 +13,7 @@ public class RestAssuredTest extends TestReportConfig {
     @Test
     public void restApiTest() {
         try {
-            Response response = get("http://localhost:8080/person/people");
+            Response response = get("http://localhost:8080/restAPI/person/people");
             Assert.assertEquals(response.getStatusCode(), 200);
             System.out.println(response.toString());
 //            response.then().body("firstName", hasItems("Dayaan", " Diyaan"));
@@ -34,7 +34,7 @@ public class RestAssuredTest extends TestReportConfig {
                             "        \"age\": 1,\n" +
                             "        \"gender\": \"male\",\n" +
                             "        \"address\": \"chicago\"\n" +
-                            "    }").when().post("http://localhost:8080/person/people");
+                            "    }").when().post("http://localhost:8080/restAPI/person/people");
             Assert.assertEquals(response.getStatusCode(),200);
             System.out.println(response.body().asString());
 
@@ -46,7 +46,7 @@ public class RestAssuredTest extends TestReportConfig {
     @Test
     public void restApiCountPractiseTest() {
         try {
-            Response response = get("http://localhost:8080/person/people");
+            Response response = get("http://localhost:8080/restAPI/person/people");
             Assert.assertEquals(response.getStatusCode(), 200);
             System.out.println(response.body().asString());
             System.out.println(response.jsonPath().getList("firstName").size());
